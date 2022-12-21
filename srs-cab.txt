@@ -1,0 +1,65 @@
+Cab Management System
+INTRODUCTION
+Our social lives depend heavily on transportation. Without transportation the society cannot function. There are numerous businesses that provide transportation services to both private individuals and businesses. To obtain a transportation service under the current system, the client first contacts the transport business. The corporation then reserves the car for him for the specified date and time, and delivers it to his address at that precise moment. The online service known as the "Online Cab Booking System" will automate the process of making a cab reservations and benefit both the customer and the business by saving time and resources. The business will initially register its vehicles as well as the vehicles on the system. 
+PURPOSE
+This SRS document's  purpose is to outline the software requirements for online cab booking. It is meant to be a thorough description of all the features the system offers. The system's major objective is to automate the process of online taxi reservations. In a subsequent document, specific design and implementation information will be provided.
+SCOPE
+The Cab Management service is a web-based application designed to provide users with the ability to manage and monitor their cab fleet. The service will provide users with information about their cab fleet, such as the location of each cab, the estimated time of arrival, and the estimated cost for each trip. The service will also provide users with the ability to track their cab fleet in real time, as well as the ability to monitor and manage their cab fleet more efficiently.
+
+1.Registration Page
+1.11.2 user must fill a detailed form to register for services.it should include [ user details component ]
+phone number- refered as foreign, it should be Unique ,maximum of 10 numbers and should include country code
+First Name – the maximum length of the name should be (20) and can’t contain any numbers or special characters
+ Last Name -cannot contain numbers , maxlength should be 20 characters
+Email-it should be in email format, should be unique and should alert the user if not in the correct format
+ date of birth – should contain date , month and year.
+Gender - should provide the options male,female and other using drop-down menu
+ Place-max length should be 25 characters
+ Pincode -6 digits number have to be entered
+Emergency Contact Number – unique 10 digits number should be used
+ Blood Group- Blood group should be selected from the drop down menu
+Password -minlength 6 characters include special , Uppercase & Lower Case & Number]*
+ Confirm password
+OTP should be sent to the mail and the mail should be verified
+
+2. Login facility with two authentication such as captcha and a picture [OTP via email]
+
+user should be able to login by providing the login details
+Email- should be unique and validation for email
+ Phone NumberUniq- should be Unique of 10 numbers + country code
+password- minlength(8) include special Characters, Uppercase & Lower Case & Number
+
+3. Cab search facility
+
+search filtered basis of availability and nearby location
+ Result should be available in a ordered way
+ result raw should include view Details button along with cab driver name ,vehicle number , vehicle model and location of the vehicle
+ details tab should include photo of the driver, name , gender, experience ,contact number, availability ,rating, time to reach, fare[ go back button shows results table ]
+4.Cab master details
+Name- This must include First and Last name, field should not be empty, not more than 30 characters
+ Mobile Number – should include country code along with a unique mobile number and verify the number
+Email id- should have a unique email id and verification of the mail should be done , it can’t be empty)
+ID proof – Drivers should upload documents like Aadhar Card, Pan Card or any other valid .
+Driver’s License - drivers should upload their own Driver’s licence and enter the expiry date of the licence
+Car’s documents – All documents regarding the vehicle should be uploaded like RC book,pollution certificate , NOC ,insurance certificate.
+5.Cab schedule details with fare
+Admins are provided a place to add several sources.
+The admin is provided a field to add several locations.
+The fare between these sources and destinations must be entered by admin.
+A fare information chart is produced.
+6.Cab ticket booking details with tax shall be stored
+A booking page is created.
+Once the user chooses the source, destination, and initialises the cab  ticket booking
+The user-based fare is generated.
+The fare includes tax.
+Payment choice (upi,card,netbanking,cash)
+Verify the vehicle reservation.
+There is a cancel button.
+After confirmation, the payment page is launched.
+7. Payment shall be collected and invoice shall be given to the Customer:
+ should be able to issue an invoice [ vehicle reg number][price]     [tax] [net price] [cofirmation message]
+ payment option such as upi,card,netbanking  additional by cash facility.
+ print bill
+8. Feedback shall be collected:
+ able to provide rating for driver as well as overall     services
+admin should be able to see feedbacks along with     passenger name
